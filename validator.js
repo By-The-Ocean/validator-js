@@ -55,6 +55,10 @@ function flash_wrong_validation(item) {
     item.focus(function ( ) {
         item.removeClass('wrong-input');
     });
+    item.unbind('keydown');
+    item.keydown(function ( ) {
+        item.removeClass('wrong-input');
+    });
 }
 
 
