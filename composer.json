@@ -5,7 +5,7 @@
             "url": "https://github.com/By-The-Ocean/validator-js.git"
         }
     ],
-    "name": "by-the-ocean/validator-jse",
+    "name": "by-the-ocean/validator-js",
     "autoload": {
         "psr-0": {
             "by-the-ocean\\validator-js": "src"
