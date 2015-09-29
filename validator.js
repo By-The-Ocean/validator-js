@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    prettyfy_min_max();
+});
+
 function validateAll(callback, flashWrong, FailCallback) {
     var addcss = true;
     if (addcss === true)
@@ -38,6 +42,26 @@ function validateAll(callback, flashWrong, FailCallback) {
                     flash_wrong_validation(item);
             }
             if (R.notEmail()) {
+                errors++;
+                if (flashWrong)
+                    flash_wrong_validation(item);
+            }
+        }
+        if (item.attr('validatecharsmin') !== undefined && item.is(":visible"))
+        {
+            var min = item.attr('validatecharsmin');
+
+            if (item.val().length < min) {
+                errors++;
+                if (flashWrong)
+                    flash_wrong_validation(item);
+            }
+        }
+        if (item.attr('validatecharsmax') !== undefined && item.is(":visible"))
+        {
+            var max = item.attr('validatecharsmax');
+
+            if (item.val().length > max) {
                 errors++;
                 if (flashWrong)
                     flash_wrong_validation(item);
@@ -97,4 +121,27 @@ function ValidationRules(array_of_rules, item) {
         }
         return false
     };
+}
+
+function prettyfy_min_max() {
+    $('*').each(function ( ) {
+        var item = $(this);
+        if (item.attr('validate') !== undefined && item.is(":visible"))
+        {
+            var rules = item.attr('validate').split(' ');
+            for (var a = 0; a < rules.length; a++)
+            {
+                if (rules[a].match(/\d*\-\d*/))
+                {
+                    var r = rules[a];
+                    item.attr('validate', item.attr('validate').replace(r, ''))
+                    r = r.split('-')
+                    item.attr('validatecharsmin', r[0]);
+                    item.attr('validatecharsmax', r[1]);
+                    break;
+                }
+            }
+        }
+
+    });
 }
