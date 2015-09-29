@@ -1,18 +1,20 @@
 {
-    "repositories": [
+   "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/By-The-Ocean/validator-js.git"
+            "type": "package",
+            "package": {
+                "name": "by-the-ocean/validator-js",
+                "version": "master",
+                "autoload": { "psr-0": { "Vby-the-ocean\\validator-js": "" } },
+                "target-dir": "by-the-ocean/validator-js",
+                "source": {
+                    "url": "https://github.com/By-The-Ocean/validator-js.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
-    ],
-    "name": "by-the-ocean/validator-js",
-    "autoload": {
-        "psr-0": {
-            "by-the-ocean\\validator-js": "src"
-        }
-    } ,
-    "require": {
-        "components/jquery":"2.*"
-    }
+    ]
+    
 
 }
