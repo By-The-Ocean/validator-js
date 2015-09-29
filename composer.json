@@ -1,24 +1,23 @@
 {
-    "require": {
-        "components/jquery": "2.*.*"
-    },
-    "repositories":[
-       
+    "name": "by-the-ocean/validator-js",
+    "description": "Validation js function",
+    "type": "javascript",
+    "keywords": ["js", "validator"],
+    "license": "GPL-3.0",
+    "repositories": [
         {
-            "type":"package",
-            "package":{
-                "name":"By-The-Ocean/validator-js",
-                "version":"1.0",
-                "dist":{
-                    "url":"http://github.com/By-The-Ocean/validator-js",
-                    "type":"git"
-                },
-                "source":{
-                    "url":"http://github.com/By-The-Ocean/validator-js",
-                    "type":"git"
-                }
-            }
+            "type": "git",
+            "url": "http://github.com/By-The-Ocean/validator-js"
         }
-    ]
+    ],
+    "authors": [
+        {
+            "name": "by-the-ocean",
+            "email": "just4me2be@ya.ru"
+        }
+    ],
+    "require": {
+        "components/jquery": "2.*"
+    }
    
 }
