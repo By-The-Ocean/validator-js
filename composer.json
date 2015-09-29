@@ -1,29 +1,18 @@
 {
-    "name": "by-the-ocean/validator-js",
-    "description": "Validation js function",
-    "type": "javascript",
-    "keywords": ["js", "validator"],
-    "license": "GPL-3.0",
-    "repositories": [{
-            "type": "package",
-            "package": {
-                "name": "by-the-ocean/validator-js",
-                "version": "1.0",
-                "source": {
-                    "url": "https://github.com/By-The-Ocean/validator-js.git",
-                    "type": "git",
-                    "reference": "1.0"
-                }
-            }
-        }],
-    "authors": [
+    "repositories": [
         {
-            "name": "by-the-ocean",
-            "email": "just4me2be@ya.ru"
+            "type": "vcs",
+            "url": "https://github.com/By-The-Ocean/validator-js"
         }
     ],
+    "name": "by-the-ocean/validator-jse",
+    "autoload": {
+        "psr-0": {
+            "by-the-ocean\\validator-js": "src"
+        }
+    } ,
     "require": {
-        "components/jquery": "2.*"
+        "components/jquery":"2.*"
     }
 
 }
