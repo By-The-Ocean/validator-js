@@ -4,12 +4,18 @@
     "type": "javascript",
     "keywords": ["js", "validator"],
     "license": "GPL-3.0",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/By-The-Ocean/validator-js"
-        }
-    ],
+    "repositories": [{
+            "type": "package",
+            "package": {
+                "name": "by-the-ocean/validator-js",
+                "version": "master",
+                "source": {
+                    "url": "https://github.com/By-The-Ocean/validator-js",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }],
     "authors": [
         {
             "name": "by-the-ocean",
@@ -19,5 +25,5 @@
     "require": {
         "components/jquery": "2.*"
     }
-   
+
 }
