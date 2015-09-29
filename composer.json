@@ -7,7 +7,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "http://github.com/By-The-Ocean/validator-js"
+            "url": "https://github.com/By-The-Ocean/validator-js"
         }
     ],
     "authors": [
