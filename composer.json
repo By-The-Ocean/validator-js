@@ -10,7 +10,7 @@
                 "name": "by-the-ocean/validator-js",
                 "version": "1.0",
                 "source": {
-                    "url": "https://github.com/By-The-Ocean/validator-js",
+                    "url": "https://github.com/By-The-Ocean/validator-js.git",
                     "type": "git",
                     "reference": "1.0"
                 }
