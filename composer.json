@@ -2,7 +2,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/By-The-Ocean/validator-js"
+            "url": "https://github.com/By-The-Ocean/validator-js.git"
         }
     ],
     "name": "by-the-ocean/validator-jse",
