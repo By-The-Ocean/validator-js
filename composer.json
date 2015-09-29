@@ -1,4 +1,18 @@
 {
-    "name": "by-the-ocean/validator-js",
-    "description": "none"
+    "name": "by-the-ocean/validate-js",
+    "description": "Composer helps you declare, manage and install dependencies of PHP projects, ensuring you have the right stack everywhere.",
+    "keywords": ["package", "dependency", "autoload"],
+    "homepage": "https://getcomposer.org/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nils Adermann",
+            "email": "naderman@naderman.de",
+            "homepage": "http://www.naderman.de"
+        }
+
+    ]
+
+
 }
