@@ -8,11 +8,11 @@
             "type": "package",
             "package": {
                 "name": "by-the-ocean/validator-js",
-                "version": "master",
+                "version": "1.0",
                 "source": {
                     "url": "https://github.com/By-The-Ocean/validator-js",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "1.0"
                 }
             }
         }],
