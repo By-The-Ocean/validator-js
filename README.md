@@ -9,7 +9,7 @@ In JS call function "validateAll(success_callback,mark_failed_fields,fail_callba
 
 #Rules
 
-notempty - string must be 1 or more characters.
-email - must be valid email
-phone - must be valid phone (Estonian phone code only)
-number - must be a valid integer or float.
+*notempty - string must be 1 or more characters.
+*email - must be valid email
+*phone - must be valid phone (Estonian phone code only)
+*number - must be a valid integer or float.
