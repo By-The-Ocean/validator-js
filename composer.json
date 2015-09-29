@@ -14,7 +14,9 @@
                 }
             }
         }
-    ]
+    ],
+    "name": "by-the-ocean/validator-js",
+    "description": "none"
     
 
 }
